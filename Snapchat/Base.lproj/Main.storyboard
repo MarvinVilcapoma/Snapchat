@@ -1,24 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Iniciar Sesion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IniciarSesionViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snapchat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlC-X3-YKP">
+                                <rect key="frame" x="109" y="82" width="196" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZk-8J-bNH">
+                                <rect key="frame" x="107" y="171" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bsh-Oh-k3C">
+                                <rect key="frame" x="107" y="237" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8V-YH-F91">
+                                <rect key="frame" x="161.5" y="300" width="91" height="30"/>
+                                <state key="normal" title="Iniciar Sesión"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bsh-Oh-k3C" firstAttribute="leading" secondItem="KZk-8J-bNH" secondAttribute="leading" id="6Lr-nT-sac"/>
+                            <constraint firstItem="Bsh-Oh-k3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7s4-Ch-u9m"/>
+                            <constraint firstItem="tlC-X3-YKP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXj-Vc-hN2"/>
+                            <constraint firstItem="KZk-8J-bNH" firstAttribute="top" secondItem="tlC-X3-YKP" secondAttribute="bottom" constant="31" id="JmD-SI-cRQ"/>
+                            <constraint firstItem="tlC-X3-YKP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="RbG-qR-YiB"/>
+                            <constraint firstItem="s8V-YH-F91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WzP-FD-T3a"/>
+                            <constraint firstItem="KZk-8J-bNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="d4W-fR-KIf"/>
+                            <constraint firstItem="s8V-YH-F91" firstAttribute="top" secondItem="Bsh-Oh-k3C" secondAttribute="bottom" constant="29" id="qHP-Ky-EXm"/>
+                            <constraint firstItem="KZk-8J-bNH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="utG-9h-JYZ"/>
+                            <constraint firstItem="Bsh-Oh-k3C" firstAttribute="top" secondItem="KZk-8J-bNH" secondAttribute="bottom" constant="32" id="w6u-Av-lPT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </scene>
     </scenes>
 </document>

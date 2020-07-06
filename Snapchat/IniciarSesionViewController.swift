@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IniciarSesionViewController.swift
 //  Snapchat
 //
 //  Created by mbtec22 on 7/5/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IniciarSesionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
